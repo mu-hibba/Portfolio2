@@ -1,0 +1,142 @@
+{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+.contact {
+    color: dodgerblue;
+}
+
+.contact:hover {
+    background: #2196F3;
+    color: white;
+}
+.contact-form {
+    position: relative;
+    background: #f1f1f1;
+    width: calc(100% - 400px);
+    padding: 60px 40px 20px;
+}
+
+.contact-form form {
+    width: 100%;
+}
+
+.contact-form .row {
+    width: 100%;
+    display: flex;
+    margin: 5px 10px;
+}
+
+.contact-form .fullinput {
+    width: 100%;
+    margin: 0 30px;
+}
+
+.contact-form .row input,
+.contact-form .row textarea {
+    position: relative;
+    border: 1px solid rgba(78, 76, 76, 0.8);
+    color: #111;
+    background:  transparent;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0;
+    resize: none;
+}
+.contact-form .row textarea {
+    height: 120px;
+}
+
+.contact-form .row input[type='submit'] {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 0;
+    margin: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.contact-info {
+    width: 350px;
+    background: #f9f9f9;
+    padding: 80px 40px 50px;
+}
+
+.contact-info .info-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.contact-info .info-box .details  a {
+    color: #111;
+}
+.contact-info .info-box .contact-icon {
+    width: 20px;
+    margin-right: 40px;
+}
